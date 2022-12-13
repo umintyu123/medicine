@@ -1,0 +1,79 @@
+<ons-page id="day">
+    <script>
+            document.addEventListener('init', function(event) {
+                var currentUser = ncmb.User.getCurrentUser();
+                if (event.target.matches('#day')) {
+                    var receipt = document.getElementById('receipt');
+                    if (currentUser) {
+                        receipt.hidden = false;
+                        console.log("ログイン中のユーザー: " + currentUser.get("userName"));
+                    } else {
+                        receipt.hidden = true;
+                        console.log("未ログインまたは取得に失敗");
+                    }
+                }
+            }, false);
+    </script>
+    <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          薬局名orトップ
+        </div>
+    </ons-toolbar>
+
+        <ons-button onclick="location.href='admin/index.html'">管理者</ons-button> 
+
+
+    <div id="receipt" hidden>
+        <ons-card>
+            <div class="title">受取日まであと--日</div>
+        </ons-card>
+    </div>
+
+      </ons-toolbar>
+      <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
+        イベント一覧
+      </p>
+
+        <!-- <ons-button onclick="getevent()">内容を最新版に更新</ons-button> -->
+    <div id="event_simple">
+      <ons-card  onclick="fn.load('detail.html')">
+
+              <ons-list-item>
+                <div id="home_title">イベント名</div>
+              </ons-list-item>
+
+            <ons-list-item>
+                <div>開催日:</div>
+                <div id="home_event_data">YYYY年MM月DD日</div>
+            </ons-list-item>
+                    
+            <ons-list-item>        
+                <div>詳細:</div>
+                    <div id="home_event_content">-------------------------------------</div>
+            </ons-list-item>
+
+      </ons-card>
+    </div>
+    
+      <ons-card>
+          <div class="title">イベント名</div>
+          <div class="content">
+              開催日：MM月DD日
+              <br>
+              概要：------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          </div>
+      </ons-card>
+      <ons-card>
+          <div class="title">商品名</div>
+          <div class="content">
+              概要：------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          </div>
+      </ons-card>
+
+
+</ons-page>

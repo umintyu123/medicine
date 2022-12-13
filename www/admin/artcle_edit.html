@@ -1,0 +1,33 @@
+<ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button onclick="fn.load('article.html')">
+        </ons-back-button>
+      </div>
+      <div class="center">
+        イベント編集
+      </div>
+    </ons-toolbar>
+        <ons-card>
+            <ons-list-header>登録内容</ons-list-header>
+            <!--登録内容の記載-->
+                <p>タイトル
+                    <input class="text-input text-input--material"  type="text" required>
+                </p>
+                <p>開催日　
+                    <input class="text-input text-input--material"  type="text" required>
+                </p>
+                <p>開催住所
+                    <input class="text-input text-input--material"  type="text" required>
+                </p>
+                <p>電話番号
+                    <input class="text-input text-input--material"  type="text" required>
+                <p>詳細　　
+                    <!-- <input  class="text-input text-input--material"  type="text" required > -->
+                    <textarea style="width:200px;" name="comment" class="text-input text-input--material"  type="text" required></textarea >
+                </p>
+                <!--登録完了のalert？-->
+                <ons-button onclick="change_event()" modifier="outline">変更</ons-button>
+        </ons-card>
+
+</ons-page>

@@ -1,0 +1,37 @@
+<ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button onclick="fn.load('main.html')">
+        </ons-back-button>
+      </div>
+      <div class="center">
+        患者管理
+      </div>
+      <div class="right">
+        <ons-toolbar-button onclick="fn.load('user_add.html')">
+            新規登録
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <ons-card>
+        <div style="text-align: center;">
+            <div class="title">患者検索</div>
+            <div class="content">
+                <ons-input id="user_search" modifier="underbar" placeholder="電話番号" float></ons-input>
+                <ons-button modifier="outline">検索</ons-button>
+            </div>
+        </div>
+    </ons-card>
+
+
+
+
+
+    <ons-card>
+        <div class="title">ID：0000-0000<br>パスワード：000000<br>電話番号：080-0000-0000</div>
+        <ons-button onclick="fn.load('admin/admin-top.html')">アカウント編集</ons-button>
+        <ons-button onclick="notify()">アカウント削除</ons-button>
+        
+    </ons-card>
+</ons-page>

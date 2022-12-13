@@ -1,0 +1,22 @@
+<ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        管理者
+      </div>
+    </ons-toolbar>
+    <!--home.htmlを模倣してons-cardで記述する-->
+    <ons-card onclick="fn.load('admin/article.html')">
+        <div class="title">イベント一覧</div>
+    </ons-card>
+    <ons-card onclick="fn.load('admin/medicine.html')">
+        <div class="title">お薬登録</div>  
+    </ons-card>
+    <ons-card onclick="fn.load('admin/user.html')">
+        <div class="title">利用者管理</div>  
+    </ons-card>
+</ons-page>

@@ -1,0 +1,36 @@
+<ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button onclick="fn.load('article.html')">
+        </ons-back-button>
+      </div>
+      <div class="center">
+        イベント追加
+      </div>
+    </ons-toolbar>
+    <ons-card>
+        <ons-list-header>登録内容</ons-list-header>
+        <!--登録内容の記載-->
+                <p>タイトル
+                    <ons-input id="admin_event_title" modifier="underbar" float></ons-input>
+                </p>
+                <p>開催日　
+                    <ons-input id="admin_event_day" modifier="underbar" float></ons-input>
+                </p>
+                <p>開催住所
+                    <ons-input id="admin_event_address" modifier="underbar" float></ons-input>
+                </p>
+                <p>電話番号
+                    <ons-input id="admin_event_phone" modifier="underbar" float></ons-input>
+                </p>
+                <p>詳細　　
+                    <ons-input id="admin_event_content" modifier="underbar" float></ons-input>
+                </p>
+                <!--登録完了のalert？-->
+                <ons-button onclick="admin_add()" modifier="outline">登録</ons-button>
+    </ons-card>
+
+    
+
+
+</ons-page>

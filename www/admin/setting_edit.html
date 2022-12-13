@@ -1,0 +1,20 @@
+<ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button onclick="fn.load('setting.html')">
+        </ons-back-button>
+      </div>
+      <div class="center">
+        設定変更
+      </div>
+    </ons-toolbar>
+    <ons-card>
+        <p>ユーザーID
+        <ons-input id="userName" modifier="underbar" float></ons-input>
+        </p><p>パスワード
+        <ons-input id="password" type="password" modifier="underbar" float></ons-input>
+        </p><p>
+        <ons-button onclick="adminEditAlert()">変更</ons-button>
+        </p>
+    </ons-card>
+</ons-page>

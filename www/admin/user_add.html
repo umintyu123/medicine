@@ -1,0 +1,25 @@
+<ons-page>
+    <ons-toolbar>
+        <ons-back-button onclick="fn.load('user.html')"></ons-back-button>
+        <div class="center">新規患者登録</div>
+    </ons-toolbar>
+
+    <ons-card>
+        <div class="title">登録内容</div>
+        <div class="content">
+            <div style="text-align: center; margin-top: 30px;">
+                <p>ユーザーID
+                <ons-input id="userName" modifier="underbar" float></ons-input>
+                </p><p>パスワード
+                <ons-input id="password" type="password" modifier="underbar" float></ons-input>
+                </p><p>　氏名(ｶﾅ)
+                <ons-input id="kanaName" modifier="underbar" float></ons-input>
+                </p><p>　電話番号
+                <ons-input id="telephone" modifier="underbar" float></ons-input>
+                </p><p>
+                <ons-button onclick="addAlertDialog()">新規登録</ons-button>
+                </p>
+            </div>
+        </div>
+    </ons-card>
+</ons-page>

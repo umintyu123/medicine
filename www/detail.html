@@ -1,0 +1,32 @@
+<ons-page>
+<ons-toolbar>
+    <div class="left">
+        <ons-back-button onclick="fn.load('home.html')">
+        トップ
+        </ons-back-button>
+    </div>
+</ons-toolbar>
+<ons-card id="event_all">
+    <div class="title">テストイベント</div>
+        <ons-list-header>イベントの詳細内容</ons-list-header>
+        <!--詳細内容の記載-->
+            <ons-list-item >
+                <div>開催日:</div>
+                <div id="event_data">YYYY年MM月DD日</div>
+            </ons-list-item>
+            <ons-list-item > 
+                <div>開催住所:</div>
+                <div id="event_address">---</div>
+            </ons-list-item>
+
+            <ons-list-item>
+                <div>電話番号:</div>
+                <div id="event_phone_number">080-0000-0000</div> 
+            </ons-list-item>
+            
+            <ons-list-item>
+                <div>詳細:</div>
+                <div id="event_content">-------------------------------------</div>
+        </ons-list-item> 
+</ons-card>
+</ons-page>

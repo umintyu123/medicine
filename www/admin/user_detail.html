@@ -1,0 +1,28 @@
+<ons-page>
+<ons-toolbar>
+    <div class="left">
+        <ons-back-button onclick="fn.load('main.html')">
+        患者管理
+        </ons-back-button>
+    </div>
+    <div class="right">
+        <ons-toolbar-button><i class="zmdi zmdi-search" size="40px"></i></ons-toolbar-button>
+        <ons-toolbar-button>+</ons-toolbar-button>
+    </div>
+</ons-toolbar>
+    <ons-card>
+        <div class="title">ID：0000-0000<br>パスワード：000000<br>電話番号：080-0000-0000</div>
+        <ons-button onclick="fn.load('user.html')">アカウント編集</ons-button>
+        <ons-button onclick="createAlertDialog()">アカウント削除</ons-button>
+                <ons-alert-dialog id="my-alert-dialog" modifier="rowfooter">
+                    <div class="alert-dialog-title">警告</div>
+                    <div class="alert-dialog-content">
+                    このアカウントを削除しますか
+                    </div>
+                    <div class="alert-dialog-footer">
+                    <ons-alert-dialog-button onclick="hideAlertDialog()">いいえ</ons-alert-dialog-button>
+                    <ons-alert-dialog-button onclick="hideAlertDialog()">はい</ons-alert-dialog-button>
+                    </div>
+                </ons-alert-dialog>
+    </ons-card>
+</ons-page>
